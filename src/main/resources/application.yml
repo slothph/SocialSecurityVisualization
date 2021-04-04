@@ -1,0 +1,21 @@
+#服务器的配置
+server:
+  port: 9090
+  servlet:
+    path: /
+
+#配置连接数据库信息
+spring:
+  datasource:
+    name: druid
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://hadoop101:3306/test?characterEncoding=utf-8
+    username: root
+    password: walol
+    driver-class-name: com.mysql.jdbc.Driver
+
+#整合mybatis
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  config-location: classpath:mybatis.xml
+  type-aliases-package: henu.entity
