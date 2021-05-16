@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ph.socialsecurityvisualization.mapper.InsureUnitTrendMapper">
+    <resultMap id="BaseResultMap" type="com.ph.socialsecurityvisualization.entitiy.InsureUnitTrend">
+
+        <result column="insure_id" jdbcType="DECIMAL" property="insureId"/>
+        <result column="insure_unit" jdbcType="DECIMAL" property="insureUnit"/>
+        <result column="insure_cancel" jdbcType="DECIMAL" property="insureCancel"/>
+        <result column="insure_date" jdbcType="VARCHAR" property="insureDate"/>
+        <result column="year_on_year" jdbcType="DECIMAL" property="yearOnYear"/>
+        <result column="month_on_month" jdbcType="DECIMAL" property="monthOnMonth"/>
+    </resultMap>
+    <!-- query All -->
+    <select id="queryInsureDate" resultMap="BaseResultMap">
+       SELECT
+        insure_id,
+        insure_unit,
+        insure_cancel,
+        insure_date,
+        year_on_year,
+        month_on_month
+        from  insure_unit_trend
+    </select>
+
+
+</mapper>

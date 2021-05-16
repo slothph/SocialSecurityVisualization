@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>参保登记全景分析</title>
+    <link rel="stylesheet" href="css/index.css" />
+
+</head>
+
+<body>
+    <!-- 头部的盒子 -->
+    <header>
+        <h1>社会保险-参保登记全景分析</h1>
+    </header>
+    <!-- 页面主体部分 -->
+    <section class="mainbox">
+        <div class="column-child">
+            <div class="panel trend">
+                <h2>参保单位数量趋势分析</h2>
+                <div class="chart"></div>
+                <div class="panel-footer"></div>
+            </div>
+
+
+            <div class="panel insurance">
+                <h2>各单位类型参保情况</h2>
+                <div class="unit_box">
+                    <div class="unit_title_1">个体工商户</div>
+                    <div class="unit_data_1">14536个 73%</div>
+                    <div class="unit_title_2">机关事业单位</div>
+                    <div class="unit_data_2">8793个 40%</div>
+                    <div class="unit_title_3">普通单位</div>
+                    <div class="unit_data_3">15369个 80%</div>
+                </div>
+                <div class="panel-footer"></div>
+            </div>
+
+            <div class="panel new_format">
+                <h2>新业态行业参保情况</h2>
+                <div class="chart"></div>
+                <div class="panel-footer"></div>
+            </div>
+        </div>
+        <div class="column-child">
+            <div class="panel radar">
+                <h2>各险种参保情况</h2>
+                <div class="bar_png"></div>
+                <div class="chart"></div>
+                <div class="panel-footer"></div>
+            </div>
+            <div class="panel transfer">
+                <h2>各区域参保人数转移情况</h2>
+                <div class="chart"></div>
+                <div class="panel-footer"></div>
+            </div>
+            <div class="panel economic">
+                <h2>各险种参保情况</h2>
+                <div class="chart"></div>
+                <div class="panel-footer"></div>
+            </div>
+        </div>
+        <div class="column-child">
+            <div class="panel change-trend">
+                <h2f>近几年单位缴费基数变化趋势</h2f>
+                <div class="chart"></div>
+                <div class="panel-footer"></div>
+            </div>
+            <div class="panel industry ">
+                <h2>各行业参保情况</h2>
+                <div class="chart"></div>
+                <div class="panel-footer"></div>
+            </div>
+            <div class="panel">
+                <h2>各区域参保单位数排名</h2>
+                <table class="table-fill">
+                    <thead>
+                        <tr>
+                            <th class="text-left">排名</th>
+                            <th class="text-left">统筹区域</th>
+                            <th class="text-left">参保单位数</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-hover">
+                        <tr>
+                            <td class="text-left">NO.1</td>
+                            <td class="text-left">乐至县</td>
+                            <td class="text-left">6324</td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">NO.2</td>
+                            <td class="text-left">安岳县</td>
+                            <td class="text-left">6065</td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">NO.3</td>
+                            <td class="text-left">催平铺</td>
+                            <td class="text-left">5831</td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">NO.4</td>
+                            <td class="text-left">雁江区</td>
+                            <td class="text-left">5639</td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">NO.5</td>
+                            <td class="text-left">锦江区</td>
+                            <td class="text-left">5298</td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">NO.6</td>
+                            <td class="text-left">成华区</td>
+                            <td class="text-left">5165</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="panel-footer"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/flexible.js"></script>
+    <script src="js/echarts.min.js"></script>
+    <script src="js/echarts-gl.min.js"></script>
+    <!-- 引入jquery -->
+    <script src="js/jquery.js"></script>
+    <!-- 必须先引入china.js这个文件 因为中国地图需要 -->
+    <script src="js/china.js"></script>
+    <script src="js/Insurance_registration_1.js"></script>
+</body>
+
+</html>
